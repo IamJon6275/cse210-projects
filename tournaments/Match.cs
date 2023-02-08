@@ -8,4 +8,22 @@ public class Match
         _team1 = team1;
         _team2 = team2;
     }
+
+        public void DecideWin()
+    {
+        Console.WriteLine("Which Team Won?");
+        Console.WriteLine($"1) {_team1.GetTeamName()}");
+        Console.WriteLine($"2) {_team2.GetTeamName()}");
+        string winner = Console.ReadLine() ?? string.Empty;
+        if(winner =="1")
+        {
+            _team1.AddWin();
+            _team2.AddLoss();
+        }
+        else 
+        {
+            _team1.AddLoss();
+            _team2.AddWin();
+        }
+    }
 }
