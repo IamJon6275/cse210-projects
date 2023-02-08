@@ -4,22 +4,22 @@ Console.WriteLine("Hello, World!");
 Team firebirds = new Team("Firebirds");
 
 Player john = new Player("John Henderson", 12);
-// john.Display();
-Player tim = new Player("Tim Nunn", 13);
+//john.Display();
+Player tim = new Player("Tim Nunn", 1);
 
 firebirds.AddPlayer(john);
 firebirds.AddPlayer(tim);
 firebirds.DisplayRoster();
 
-Team angryPandas = new Team("Angry Pandas");
+Team blackSharks = new Team("Black Sharks");
 
-Player adam = new Player("Adam Hayes", 1);
-Player jonas = new Player("Jonas Smith",28);
-angryPandas.AddPlayer(adam);
-angryPandas.AddPlayer(jonas);
+Player jon = new Player("Jonathan Wells", 1);
+Player jonas = new Player("Jonas Smith", 28);
+blackSharks.AddPlayer(jon);
+blackSharks.AddPlayer(jonas);
 
-Match match1 = new Match(firebirds,angryPandas);
+Match match1 = new Match(firebirds, blackSharks);
 match1.DecideWin();
 
-angryPandas.DisplayRoster();
+blackSharks.DisplayRoster();
 firebirds.DisplayRoster();
