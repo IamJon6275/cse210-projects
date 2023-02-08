@@ -8,3 +8,4 @@ public class Match
         _team1 = team1;
         _team2 = team2;
     }
+}
