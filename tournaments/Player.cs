@@ -14,14 +14,3 @@ public class Player
         Console.WriteLine($"{_name} {_jNumber}");
     }
 }
-
-    public void Display()
-    {
-        Console.WriteLine($"{_name} {_jNumber}");
-    }
-}
-    public void Display()
-    {
-        Console.WriteLine($"{_name} {_jNumber}");
-    }
-} 
